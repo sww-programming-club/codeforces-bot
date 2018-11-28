@@ -191,8 +191,6 @@ module.exports = (appexports) => {
 
     login(() => {
 
-        setTimeout(announceDailyProblem, 3000)
-
         setTimeout(() => { announceDailyProblem(); setInterval(announceDailyProblem, MS_DAY) },  
             UTC_HOUR * MS_HOUR > currentUTCHour ? 
             UTC_HOUR * MS_HOUR - currentUTCHour : MS_DAY - currentUTCHour + UTC_HOUR * MS_HOUR)
