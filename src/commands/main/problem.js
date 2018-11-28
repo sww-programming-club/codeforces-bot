@@ -48,7 +48,7 @@ class Problem extends commando.Command {
         //Extract the letter index from the message if specified
         let letter = arg.match(/[a-zA-Z]/)
         let problem = appconfig.exports.db.getRandomProblem(letter && letter[0].toUpperCase())
-
+        
         message.reply(problem 
             ? {embed: buildProblemRichEmbed(problem)} 
             : `Sorry, but I couldn't find any ${letter ? letter[0].toUpperCase() : ''} problems for some reason. 🤔`
