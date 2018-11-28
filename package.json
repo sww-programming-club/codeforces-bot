@@ -1,0 +1,17 @@
+{
+  "name": "codeforces-bot",
+  "version": "1.0.0",
+  "description": "Assigns daily codeforces problems to SWW Programming Club members. Slightly sentient.",
+  "main": "/src/app.js",
+  "scripts": {
+    "start": "node ./src/app"
+  },
+  "author": "SWW Programming Club",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^6.1.0",
+    "request": "^2.88.0"
+  }
+}
