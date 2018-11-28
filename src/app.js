@@ -1,4 +1,8 @@
 const request = require('request')
+const http    = require('http')
+
+//Connect the server to a port
+http.createServer((req, res) => res.end('Running!')).listen(process.env.PORT || 3000)
 
 //Ping codeforces bot in order to prevent sleeping (HEROKU)
 setInterval(() => {
