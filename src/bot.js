@@ -183,7 +183,7 @@ module.exports = (appexports) => {
         }
 
         //Announce the problem
-        announce({ embed: buildDailyChallengeRichEmbed(problem) }, 'announcements')
+        announce({ embed: buildDailyChallengeRichEmbed(problem) }, 'codeforces')
     }
 
     //Setup timing
